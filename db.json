@@ -1,0 +1,49 @@
+{
+  "yeet": [
+    {
+      "id": 1,
+      "name": "Zoe Hurich",
+      "date": "1/8/1989",
+      "email": "203",
+      "street": "0576 Fremont Terrace",
+      "company": "Johns, Schowalter and Auer",
+      "phone": "853-342-4238"
+    },
+    {
+      "id": 2,
+      "name": "Joletta Ivic",
+      "date": "7/21/1999",
+      "email": "06",
+      "street": "76240 Algoma Way",
+      "company": "Treutel-Johnson",
+      "phone": "174-299-0254"
+    },
+    {
+      "id": 3,
+      "name": "Magnum Teresia",
+      "date": "5/17/1991",
+      "email": "8",
+      "street": "1 Oakridge Plaza",
+      "company": "Miller-Kassulke",
+      "phone": "763-266-7628"
+    },
+    {
+      "id": 4,
+      "name": "Magdalena Shelliday",
+      "date": "5/1/1994",
+      "email": "22",
+      "street": "9 Mallard Trail",
+      "company": "Hauck LLC",
+      "phone": "708-464-6635"
+    },
+    {
+      "id": 5,
+      "name": "Rufus Ullrich",
+      "date": "1/22/2021",
+      "email": "65411",
+      "street": "844 Dixon Terrace",
+      "company": "Littel-Bartell",
+      "phone": "967-599-3777"
+    }
+  ]
+}
