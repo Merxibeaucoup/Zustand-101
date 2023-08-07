@@ -3,8 +3,13 @@ import useGlobalStore from "../zustand/store";
 import { useNavigate } from "react-router-dom";
 
 const SomeComponent = () => {
-  const { storedName, storedDate, storedPhone, fetchDataById } =
-    useGlobalStore();
+  const {
+    storedName,
+    storedDate,
+    storedPhone,
+    fetchDataById,
+    clearLocalStorage,
+  } = useGlobalStore();
   const [input, setInput] = useState("");
 
   const navigate = useNavigate();
@@ -27,6 +32,10 @@ const SomeComponent = () => {
     setInput(e.target.value);
   };
 
+  const handleClearLocalStroage = () => {
+    clearLocalStorage();
+  };
+
   return (
     <div>
       <div>
@@ -45,6 +54,11 @@ const SomeComponent = () => {
         <p onClick={handleNavigate}>Name: {storedName}</p>
         <p>Date: {storedDate}</p>
         <p>Phone: {storedPhone}</p>
+        <div>
+          <button type="button" onClick={handleClearLocalStroage}>
+            clear local
+          </button>
+        </div>
       </div>
     </div>
   );

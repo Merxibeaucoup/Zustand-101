@@ -2,6 +2,7 @@ import axios from "axios";
 import { create } from "zustand";
 
 const useGlobalStore = create((set) => {
+  // if no saved data initialize to empty object
   const savedState = JSON.parse(localStorage.getItem("myAppGlobalState")) || {};
 
   return {
@@ -32,6 +33,16 @@ const useGlobalStore = create((set) => {
       } catch (error) {
         console.error("Error fetching data:", error);
       }
+    },
+
+    clearLocalStorage: () => {
+      // Clears the stored data from local storage
+      localStorage.removeItem("myAppGlobalState");
+      set({
+        storedName: "",
+        storedDate: "",
+        storedPhone: "",
+      });
     },
   };
 });
